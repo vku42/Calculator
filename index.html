@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="flex justify-center items-center h-screen bg-slate-800 ">
+        
+        <div class=" bg-black text-cyan-50 w-96 p-4 font-medium text-lg">
+            <h1 class="text-center" >Calculator app</h1>
+            <div>
+                <input class="w-[100%] text-3xl text-orange-600 my-3  h-[50px] bg-slate-900  text-right border-0 outline-none "
+                id="disp" type="text" onkeypress="return isNumberKey(event)">
+                
+            </div>
+            <div class="grid grid-cols-4 gap-2 px-3 ">
+                <button class="bg-gray-500 p-5 rounded-full  getbtn" id="ac">A/C</button>
+                <button class="bg-gray-500 p-5 rounded-full   getbtn" id="+-">+/-</button>
+                <button class="bg-gray-500 p-5 rounded-full  getbtn" id="%">%</button>
+                <button class="bg-orange-800 p-5 rounded-full  getbtn" id="/">/</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="7">7</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="8">8</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="9">9</button>
+                <button class="bg-orange-800 p-5 rounded-full  getbtn" id="x">x</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="4">4</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="5">5</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="6">6</button>
+                <button class="bg-orange-800 p-5 rounded-full  getbtn" id="-">-</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="1">1</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="2">2</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id="3">3</button>
+                <button class="bg-orange-800 p-5 rounded-full  getbtn" id="+">+</button>
+            </div>
+            <div class="grid grid-cols-4 gap-2 py-2 px-3">
+                <button class="bg-stone-700 p-5 rounded-full col-span-2 getbtn" calss="0">0</button>
+                <button class="bg-stone-700 p-5 rounded-full  getbtn" id=".">.</button>
+                <button class="bg-orange-800 p-5 rounded-full  getbtn" id="=">=</button>
+                </div>
+        </div>
+    </section>
+    <script src="./calculator.js"></script>
+</body>
+</html>
